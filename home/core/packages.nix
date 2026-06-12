@@ -2,6 +2,9 @@
 
 {
   home.packages = with pkgs; [
+    nixd
+    nixfmt
+
     vesktop
 
     eza
@@ -11,6 +14,8 @@
     lazygit
     fastfetch
     btop
+    gnumake
+    wev
 
     unzip
     zip
@@ -18,7 +23,9 @@
     # Development
     zed-editor
     jetbrains.rust-rover
+    jetbrains.phpstorm
 
+    devenv
     rustup
     go
     bun
