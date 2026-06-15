@@ -116,7 +116,7 @@
     NIXOS_OZONE_WL = "1";
   };
 
-  networking.firewall.allowedTCPPorts = [ 8081 19000 19001 19002 19006 ];
+  networking.firewall.allowedTCPPorts = [ 8081 8080 1308 19000 19001 19002 19006 ];
 
   system.stateVersion = "26.05";
 }
