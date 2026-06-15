@@ -14,7 +14,7 @@
     "window.titleBarStyle" = "custom";
     "telemetry.telemetryLevel" = "off";
     "editor.codeActionsOnSave" = {
-      "editor.formatOnSave" =  true;
+      "editor.formatOnSave" = true;
       "source.fixAll.biome" = "explicit";
       "source.organizeImports.biome" = "explicit";
       "source.sortMembers" = "explicit";
@@ -64,6 +64,20 @@
 
     "[nix]" = {
       "editor.defaultFormatter" = "jnoortheen.nix-ide";
+    };
+
+    "debug.internalConsoleOptions" = "openOnSessionStart";
+
+    "[dart]" = {
+      "editor.formatOnSave" = true;
+      "editor.formatOnType" = true;
+
+      "editor.rulers" = [ 80 ];
+      "editor.selectionHighlight" = false;
+
+      "editor.tabCompletion" = "onlySnippets";
+
+      "editor.wordBasedSuggestions" = "off";
     };
   };
 }
