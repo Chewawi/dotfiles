@@ -24,6 +24,7 @@
     zed-editor
     jetbrains.rust-rover
     jetbrains.phpstorm
+    antigravity
 
     devenv
     rustup

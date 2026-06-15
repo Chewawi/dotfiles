@@ -13,6 +13,12 @@
     "editor.semanticHighlighting.enabled" = true;
     "window.titleBarStyle" = "custom";
     "telemetry.telemetryLevel" = "off";
+    "editor.codeActionsOnSave" = {
+      "editor.formatOnSave" =  true;
+      "source.fixAll.biome" = "explicit";
+      "source.organizeImports.biome" = "explicit";
+      "source.sortMembers" = "explicit";
+    };
 
     # UX
     "workbench.editor.showTabs" = "multiple";
@@ -46,6 +52,18 @@
       "**/.git/subtree-cache/**" = true;
       "**/node_modules/**" = true;
       "**/target/**" = true;
+    };
+
+    "[typescript, javascript]" = {
+      "editor.defaultFormatter" = "biomejs.biome";
+    };
+
+    "[rust]" = {
+      "editor.defaultFormatter" = "rust-lang.rust-analyzer";
+    };
+
+    "[nix]" = {
+      "editor.defaultFormatter" = "jnoortheen.nix-ide";
     };
   };
 }

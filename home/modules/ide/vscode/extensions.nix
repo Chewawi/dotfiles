@@ -22,5 +22,9 @@
     # nix
     jnoortheen.nix-ide
     mkhl.direnv
+
+    # flutter
+    dart-code.flutter
+    dart-code.dart-code
   ];
 }

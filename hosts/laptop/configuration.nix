@@ -71,6 +71,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "adbusers"
     ];
     packages = with pkgs; [
       kdePackages.kate
@@ -114,6 +115,8 @@
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
   };
+
+  networking.firewall.allowedTCPPorts = [ 8081 19000 19001 19002 19006 ];
 
   system.stateVersion = "26.05";
 }
